@@ -1,0 +1,49 @@
+body {
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+#backgroundimage {
+  z-index: -999;
+  min-height: 100%;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+header {
+  display: block;
+  background-color: lime;
+  margin: 1px;
+  height: 70px;
+}
+
+header a img {
+  float: left;
+  padding: 10px 0;
+}
+
+header nav {
+  height: 70px;
+  color: #981C35;
+  float:right;
+}
+
+header nav ul{
+  background-color: cyan;
+  margin: 0;
+  padding: 0;
+  height: 70px;
+}
+
+header nav ul li {
+  display: inline-block;
+  color: #9E1C1C;
+  padding: 15px 120px;
+  font-size: xx-large;
+  font-family: Garamond;
+}
