@@ -16,11 +16,14 @@ body {
 }
 
 header {
-  display: block;
-  background-color: lime;
-  margin: 1px;
-  height: 70px;
-}
+   /* padding-top: 10px;*/
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    border-bottom: 1px;
+    background-color:rgba(88, 6, 6, 0.67);
+  }
 
 header a img {
   float: left;
@@ -29,12 +32,12 @@ header a img {
 
 header nav {
   height: 70px;
-  color: #981C35;
+ /* color: #981C35;*/
   float:right;
 }
 
 header nav ul{
-  background-color: cyan;
+  background-color: transparent;
   margin: 0;
   padding: 0;
   height: 70px;
@@ -46,4 +49,16 @@ header nav ul li {
   padding: 15px 120px;
   font-size: xx-large;
   font-family: Garamond;
+}
+
+footer{
+  display:block;
+  position: relative;
+  margin-top:80px;
+  
+}
+footer img{
+   display:block;
+   margin-left:auto;
+   margin-right:auto;
 }
