@@ -1,0 +1,81 @@
+html, body {
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+#background {
+    z-index: -999;
+    min-height: 900px;
+    min-width: 1600px;
+    width: 100%;
+    height: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+#wrapper {
+    position: relative;
+    height:100%;
+    color: white;
+}
+#content {
+    display:flex;
+    flex-flow:column wrap;
+    justify-content:space-around;
+    
+    position: absolute; /* Абсолютное позиционирование */
+    width: 600px; /* Ширина слоя в пикселах */
+    height: 400px; /* Высота слоя в пикселах */
+    left: 50%; /* Положение слоя от левого края */
+    top: 50%; /* Положение слоя от верхнего края */
+    margin-left: -320px; /* Отступ слева */
+    margin-top: -200px;	/* Отступ сверху */
+    background: #fc0; /* Цвет фона */
+    border: solid 1px black; /* Параметры рамки вокруг */
+    padding: 10px; /* Поля вокруг текста */
+    overflow: auto; /* Добавление полосы прокрутки */ 
+}
+#forecastbar {
+    background-color:aqua;
+    display:flex;
+}
+#wind {
+    background-color:red;
+
+}
+#table {
+    margin:auto;
+}
+#weather_icon {
+    margin:auto;
+}
+header {
+    background-color:black;
+    position:fixed;
+    margin:auto;
+    width:100%;
+}
+header a img {
+    width:100px;
+}
+#navbar {
+    float:right;
+}
+#navbar ul li {
+    display:inline-block;
+    margin:20px;
+   
+}
+#footer a {
+    text-decoration: none;
+    color:white;
+}
+#footer {
+    background-color:black;
+    height:70px;
+    position:fixed;
+    width:100%;
+    bottom:0;
+    
+}

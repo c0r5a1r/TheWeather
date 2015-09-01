@@ -1,26 +1,41 @@
 <!doctype html>
 <html>
     <head>
-        <title>TheWhether</title>
+        <title>TheWeather</title>
         <meta charset="utf-8"/>
+        <link rel="stylesheet" href="css/styles.css" type="text/css">
     </head>
     <body>
+        <img id="background" src="images/Water_Drops_grass.jpg" alt="Water Drops on grass"/>
+        <div id="wrapper">
         <header>
             <a href="/"><img src="images/TheWether_logo.png" alt="Logo"/></a>
-      
+            <nav id="navbar">
                 <ul>
-                    <li>
-                        
-                    </li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
+                    <li>On 5 days</li>
+                    <li>On 16 days</li>
                 </ul>
             </nav>
         </header>
         <div id="content">
             
+            <div id="forecastbar">
+                <img id="weather_icon" src="/" alt="Whether icon"/>
+            </div>
+            <div id="wind">
+                <table id="table">
+                    <tr>
+                        <th>Wind</th><th>Pressure</th><th>Humidity</th>
+                    </tr>
+                </table>
+            </div>
+            
         </div>
-        <footer></footer>
+        <footer id="footer">
+            <a href="/">Feedback</a>
+            <a href="https://github.com/c0r5a1r/TheWhether">Project on GitHub</a>
+            <a href="/">See another projects</a>
+        </footer>
+        </div>
     </body>
 </html>
