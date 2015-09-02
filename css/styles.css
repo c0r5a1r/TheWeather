@@ -1,3 +1,6 @@
+@import "compass/css3";
+
+
 html, body {
   height: 100%;
   width: 100%;
@@ -22,23 +25,28 @@ html, body {
 #content {
     display:flex;
     flex-flow:column wrap;
-    justify-content:space-around;
+    justify-content:flex-start;
+    font-family: 'Josefin Sans', sans-serif;
     
-    position: absolute; /* Абсолютное позиционирование */
-    width: 600px; /* Ширина слоя в пикселах */
-    height: 400px; /* Высота слоя в пикселах */
-    left: 50%; /* Положение слоя от левого края */
-    top: 50%; /* Положение слоя от верхнего края */
-    margin-left: -320px; /* Отступ слева */
-    margin-top: -200px;	/* Отступ сверху */
-    background: #fc0; /* Цвет фона */
-    border: solid 1px black; /* Параметры рамки вокруг */
+    position: absolute; 
+    width: 600px; 
+    height: 400px; 
+    left: 50%; 
+    top: 50%; 
+    margin-left: -320px; 
+    margin-top: -200px;	
+    background:rgba(24, 26, 27, 0.55); 
+    border-radius: 8px; 
     padding: 10px; /* Поля вокруг текста */
     overflow: auto; /* Добавление полосы прокрутки */ 
 }
 #forecastbar {
     background-color:aqua;
     display:flex;
+    flex-flow:column wrap;
+}
+#forecastbar p {
+    text-align:center;
 }
 #wind {
     background-color:red;
@@ -51,29 +59,56 @@ html, body {
     margin:auto;
 }
 header {
-    background-color:black;
+    background-color: rgba(35, 68, 77, 0.5);
     position:fixed;
     margin:auto;
     width:100%;
 }
-header a img {
-    width:100px;
+ a img {
+    position: absolute;
+    width: 150px;
+    z-index: 10;
+    transform: rotate(-15deg);
 }
 #navbar {
     float:right;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size:25px;
 }
-#navbar ul li {
-    display:inline-block;
-    margin:20px;
+#navbar ul li a {
+    text-decoration: none;
+    display: block;
+    padding: 1em 2em;
+    color: white;
+}
+#navbar ul {
+    list-style: none;
+    padding: 0 40px; 
+    margin:0 auto;
+  
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+  
+    -webkit-flex-flow: row wrap;
+    justify-content: flex-end;
    
 }
 #footer a {
     text-decoration: none;
     color:white;
+    font-family: 'Josefin Sans', sans-serif;
+    margin: 5px 30px;
+    
 }
 #footer {
-    background-color:black;
-    height:70px;
+    display:flex;
+    justify-content:center;
+    
+    background-color: rgba(53, 61, 64, 0.55);
+    height:30px;
     position:fixed;
     width:100%;
     bottom:0;

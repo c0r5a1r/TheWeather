@@ -2,21 +2,23 @@ function getWeatherData(lang, fnOK, fnError) {
     navigator.geolocation.getCurrentPosition(locSuccess, locError);
 
     function locSuccess(position) {
+        // Check cache
         var cache = localStorage.weatherCache && JSON.parse(localStorage.weatherCache);
         var currDate = new Date();
+        // If the cache is newer than 30 minutes, use the cache
         if(cache && cache.timestamp && cache.timestamp > currDate.getTime() - 30*60*1000){
             fnOK.call(this, cache.data);
         } else {
             $.getJSON(
-                'api.openweathermap.org/data/2.5/weather?lat=' + position.coords.latitude + '&lon=' +
+                'http://api.openweathermap.org/data/2.5/forecast/daily?lat=' + position.coords.latitude + '&lon=' +
                 position.coords.longitude + '&cnt=16&units=metric' + '&lang=' + lang + '&callback=?',
                 function (response) {
-        
+                    // Store the cache
                     localStorage.weatherCache = JSON.stringify({
                         timestamp: (new Date()).getTime(),	// getTime() returns milliseconds
                         data: response
                     });
-                    
+                    // Call the function again
                     locSuccess(position);
                 }
             );
@@ -42,4 +44,3 @@ function getWeatherData(lang, fnOK, fnError) {
         fnError.call(this, message);
     }
 }
-

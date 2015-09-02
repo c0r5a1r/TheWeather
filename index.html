@@ -4,23 +4,28 @@
         <title>TheWeather</title>
         <meta charset="utf-8"/>
         <link rel="stylesheet" href="css/styles.css" type="text/css">
+        
+        <link href='https://fonts.googleapis.com/css?family=Josefin+Sans' rel='stylesheet' type='text/css'>
     </head>
     <body>
         <img id="background" src="images/Water_Drops_grass.jpg" alt="Water Drops on grass"/>
         <div id="wrapper">
+        <a href="/"><img src="images/TheWether_logo.png" alt="Logo"/></a>    
         <header>
-            <a href="/"><img src="images/TheWether_logo.png" alt="Logo"/></a>
+            
             <nav id="navbar">
                 <ul>
-                    <li>On 5 days</li>
-                    <li>On 16 days</li>
+                    <li><a href="/">On 5 days</a></li>
+                    <li><a href="/">On 16 days</a></li>
                 </ul>
             </nav>
         </header>
         <div id="content">
             
             <div id="forecastbar">
+                <p><span id="location">місто буде тут</span></p>
                 <img id="weather_icon" src="/" alt="Whether icon"/>
+                
             </div>
             <div id="wind">
                 <table id="table">
@@ -37,5 +42,9 @@
             <a href="/">See another projects</a>
         </footer>
         </div>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.0.0/moment.min.js"></script>
+        <!--<script src="js/getWeather.js"></script>-->
+        <script src="js/javascript.js"></script>
     </body>
 </html>
