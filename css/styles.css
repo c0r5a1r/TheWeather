@@ -7,6 +7,7 @@ html, body {
   padding: 0;
   margin: 0;
 }
+
 #background {
     z-index: -999;
     min-height: 900px;
@@ -17,11 +18,13 @@ html, body {
     top: 0;
     left: 0;
 }
+
 #wrapper {
     position: relative;
     height:100%;
     color: white;
 }
+
 #content {
     display:flex;
     flex-flow:column wrap;
@@ -40,47 +43,68 @@ html, body {
     padding: 10px; /* Поля вокруг текста */
     overflow: auto; /* Добавление полосы прокрутки */ 
 }
+
+#cityNameForm {
+    display: flex;
+    justify-content: center;
+    
+}
+
 #forecastbar {
    /* background-color:aqua;*/
     display:flex;
     flex-flow:column wrap;
+    /*justify-content:flex-start;*/
+    align-content: flex-start
 }
+
 #forecastbar p {
     text-align:center;
+    margin:5px;
 }
+
 #wind {
    /* background-color:red;*/
 
 }
+
 #table {
     margin:auto;
 }
+
 #weather_icon {
     margin:auto;
 }
+
 header {
+    display:flex;
+    justify-content:flex-end;
     background-color: rgba(35, 68, 77, 0.5);
     position:fixed;
     margin:auto;
     width:100%;
 }
+
  a img {
-    position: absolute;
+    position: fixed;
     width: 150px;
     z-index: 10;
     transform: rotate(-15deg);
 }
+
 #navbar {
-    float:right;
+   
     font-family: 'Josefin Sans', sans-serif;
     font-size:25px;
 }
+
 #navbar ul li a {
     text-decoration: none;
     display: block;
     padding: 1em 2em;
     color: white;
 }
+
 #navbar ul {
     list-style: none;
     padding: 0 40px; 
@@ -96,6 +120,7 @@ header {
     justify-content: flex-end;
    
 }
+
 #footer a {
     text-decoration: none;
     color:white;
@@ -103,6 +128,7 @@ header {
     margin: 5px 30px;
     
 }
+
 #footer {
     display:flex;
     justify-content:center;
@@ -114,3 +140,4 @@ header {
     bottom:0;
     
 }
+

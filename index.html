@@ -9,43 +9,48 @@
     </head>
     <body>
         <img id="background" src="images/Water_Drops_grass.jpg" alt="Water Drops on grass"/>
-        <div id="wrapper">
-        <a href="/"><img src="images/TheWether_logo.png" alt="Logo"/></a>    
-        <header>
-            
-            <nav id="navbar">
-                <ul>
-                    <li><a href="/">On 5 days</a></li>
-                    <li><a href="/">On 16 days</a></li>
-                </ul>
-            </nav>
-        </header>
-        <div id="content">
-            
-            <div id="forecastbar">
-                <p><span id="location">місто буде тут</span></p>
-                <img id="weather_icon" src="images/sighs/01d.png" alt="Whether icon"/>
-                <p><span id="temp">Temperatura</span></p>
+        <div id="wrapper" class="wrapper">
+            <a href="/"><img src="images/TheWether_logo.png" alt="Logo"/></a>    
+            <header class="header">
+                <nav id="navbar">
+                    <ul>
+                        <li><a href="/">On 5 days</a></li>
+                        <li><a href="/">On 16 days</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <div id="content" class="main">
+                <div id="forecastbar" >
+                    <form id="cityNameForm">
+                        <input type="text" name="cityName" placeholder="Type your City" id="inputCityName"/>
+                        <button type="button" id="btnWeather" value="Show">GO </button>
                 
-            </div>
-            <div id="wind">
-                <table id="table">
+                    </form>
+                    <p><span id="location"></span></p>
+                    <p>Day:<span id="tempDay"></span>Night:<span id="tempNight"></span></p>
+                    <p id="weathericon"> <img id="weatherIcon1" src="images/sighs/01d.png" alt="Whether icon"/></p>
+                    <p><span id="description"></span></p>
+                
+                </div>
+                <div id="wind">
+                    <table id="table">
                     <tr>
                         <th>Wind</th><th>Pressure</th><th>Humidity</th>
                     </tr>
                 </table>
+                </div>
             </div>
             
-        </div>
-        <footer id="footer">
-            <a href="/">Feedback</a>
-            <a href="https://github.com/c0r5a1r/TheWhether">Project on GitHub</a>
-            <a href="/">See another projects</a>
-        </footer>
+            <footer id="footer" class="footer">
+                <a href="/">Feedback</a>
+                <a href="https://github.com/c0r5a1r/TheWhether">Project on GitHub</a>
+                <a href="/">See another projects</a>
+            </footer>
         </div>
         <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
         <script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.0.0/moment.min.js"></script>
-        <script src="js/getWeather.js"></script>
-        <script src="js/javascript.js"></script>
+        <script type="text/javascript" src="js/getWeatherbyCity.js"></script>
+        <script type="text/javascript" src="js/getCurrentWeather.js"></script>
+        <script type="text/javascript" src="js/javascript.js"></script>
     </body>
 </html>
