@@ -51,11 +51,10 @@ html, body {
 }
 
 #forecastbar {
-   /* background-color:aqua;*/
+   
     display:flex;
     flex-flow:column wrap;
-    /*justify-content:flex-start;*/
-    align-content: flex-start
+    align-content: flex-start;
 }
 
 #forecastbar p {
@@ -63,10 +62,6 @@ html, body {
     margin:5px;
 }
 
-#wind {
-   /* background-color:red;*/
-
-}
 
 #table {
     margin:auto;

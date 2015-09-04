@@ -26,14 +26,17 @@ $(function() {
         var pressure = data.list[0].pressure;
         var HECTOPASCAL = 0.75006375541921;
         var weathericon = data.list[0].weather[0].icon; 
+        var pressureMMHG = pressure * HECTOPASCAL;
+        var bits = (pressureMMHG).toFixed(3);
+           
         
+        $("#table tr:not(:first)").remove();
         $('#location').html(city + ', <strong>' + country + '</strong>');
         $('#tempDay').html(tempDay);
         $('#tempNight').html(tempNight);
         $('#description').html(description);
         $('#weathericon').html('<p>'+'<img src="images/sighs/' + weathericon + '.png" />' + '</p>');
-        $('#table').html('<tr>' + '<td>' + 'Wind  ' + windSpeed +'   '+ 'm/c' + '</td>' + '<td>' + 'Pressure  ' + pressure*HECTOPASCAL +'   ' + '</td>' +'<td>' + 'Humidity  ' + humidity +'   ' + '%' + '</td>' + '</tr>');
-        
+        $('#table tr:last').after('<tr>' + '<td>' + 'Wind  ' + windSpeed + 'm/c' + '</td>' + '<td>' + bits + 'mmhg' + '</td>' +'<td>' + humidity + '%' + '</td>' + '</tr>');
         
     
     }
