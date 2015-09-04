@@ -31,7 +31,9 @@ $(function() {
         $('#tempDay').html(tempDay);
         $('#tempNight').html(tempNight);
         $('#description').html(description);
-        $('#weatherIcon').html('<img src="images/sighs/'+ weathericon + '.png" />');
+        $('#weathericon').html('<p>'+'<img src="images/sighs/' + weathericon + '.png" />' + '</p>');
+        $('#table').html('<tr>' + '<td>' + 'Wind  ' + windSpeed +'   '+ 'm/c' + '</td>' + '<td>' + 'Pressure  ' + pressure*HECTOPASCAL +'   ' + '</td>' +'<td>' + 'Humidity  ' + humidity +'   ' + '%' + '</td>' + '</tr>');
+        
         
     
     }
