@@ -2,42 +2,41 @@
 
 
 html, body {
-  height: 100%;
-  width: 100%;
-  padding: 0;
-  margin: 0;
-}
-
-#background {
-    z-index: -999;
-    min-height: 900px;
-    min-width: 1600px;
-    width: 100%;
-    height: auto;
-    position: fixed;
-    top: 0;
-    left: 0;
+    margin:0;
+    
+   
+    
+ 
+    background-image: url('/images/Water_Drops_grass.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: #464646;
 }
 
 #wrapper {
-    position: relative;
-    height:100%;
-    color: white;
+     
+   position:fixed;
+   top:0; 
+   left:0; 
+   width:100%; 
+   height:100%; 
+   color:white;
 }
 
 #content {
+    
     display:flex;
     flex-flow:column wrap;
     justify-content:space-around;
     font-family: 'Josefin Sans', sans-serif;
     font-size:25px;
-    position: absolute; 
-    width: 600px; 
-    height: 400px; 
-    left: 50%; 
-    top: 50%; 
-    margin-left: -320px; 
-    margin-top: -200px;	
+    position: relative;
+    margin:0 auto;
+    width: 50%; 
+    height:50%; 
+    top: 25%;
     background:rgba(24, 26, 27, 0.55); 
     border-radius: 8px; 
     padding: 10px; /* Поля вокруг текста */
