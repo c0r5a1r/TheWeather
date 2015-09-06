@@ -1,9 +1,10 @@
-@import "compass/css3";
-
-
 html, body {
     margin:0;
+<<<<<<< HEAD
     background-image: url('/images/forest.jpg');
+=======
+    background-image: url('/images/Water_Drops_grass.jpg');
+>>>>>>> 74106a64885484103f05a0f5318e2ed382c4624d
     background-repeat: no-repeat;
     background-position: center center;
     background-attachment: fixed;
