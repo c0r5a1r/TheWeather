@@ -64,7 +64,9 @@ html, body {
 
 
 #table {
-    margin:auto;
+ /*   margin:auto;*/
+    width:100%;
+    text-align:center;
 }
 
 #weather_icon {
