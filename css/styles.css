@@ -61,8 +61,10 @@ html, body {
     text-align:center;
 }
 
-#weather_icon {
-    margin:auto;
+#weathericon p img {
+    height:70px;
+    
+    
 }
 
 header {
