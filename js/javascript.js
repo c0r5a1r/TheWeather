@@ -35,7 +35,7 @@ $(function() {
         $('#tempDay').html(tempDay.toFixed(0));
         $('#tempNight').html(tempNight.toFixed(0));
         $('#description').html(description);
-        $('#weathericon').html('<p>'+'<img src="images/sighs/' + weathericon + '.png" />' + '</p>');
+        $('#weathericon').html('<p>'+'<img src="images/signs/' + weathericon + '.png" />' + '</p>');
         $('#table tr:last').after('<tr>' + '<td>' + windSpeed + 'm/c' + '</td>' + '<td>' + bits + 'mmhg' + '</td>' +'<td>' + humidity + '%' + '</td>' + '</tr>');
         
     
