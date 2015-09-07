@@ -39,7 +39,41 @@ html, body {
 #cityNameForm {
     display: flex;
     justify-content: center;
-    
+    position: relative;
+    margin:0 auto;
+    top:20%;
+}
+
+div form input[type="text"] {
+    color: white;
+    width: 200px;
+   
+    background: #536A74;
+    outline: 0;
+    border:0;
+    font: 200 12px/25px 'Josefin Sans', sans-serif;
+    height: 30px;
+    line-height:15px;
+    margin:0;
+    border-top-left-radius:6px;
+    border-bottom-left-radius:6px;
+}
+
+div form button {
+    border-top-right-radius:6px;
+    border-bottom-right-radius:6px;
+    background:#536A74;
+    color:white;
+    font: 200 12px/25px 'Josefin Sans', sans-serif;
+    border:0;
+}
+
+:-moz-placeholder {
+    color: white;
+}
+ 
+::-webkit-input-placeholder {
+    color: white;
 }
 
 #forecastbar {

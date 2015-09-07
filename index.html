@@ -12,6 +12,7 @@
         <div id="wrapper" class="wrapper">
             <a href="/"><img src="images/TheWeather_logo.png" alt="Logo"/></a>    
             <header class="header">
+               
                 <nav id="navbar">
                     <ul>
                         <li><a href="html/on5days.html">On 5 days</a></li>
@@ -19,13 +20,14 @@
                     </ul>
                 </nav>
             </header>
-            <div id="content" class="main">
-                <div id="forecastbar" >
-                    <form id="cityNameForm">
+                <form id="cityNameForm">
                         <input type="text" name="cityName" placeholder="Type your City" id="inputCityName"/>
                         <button type="button" id="btnWeather" value="Show">GO </button>
                 
-                    </form>
+                </form> 
+            <div id="content" class="main">
+                <div id="forecastbar" >
+
                     <p><span id="location"></span></p>
                     <p><span>Day:<span id="tempDay"></span></span><span>Night:<span id="tempNight"></span></span></p>
                     <p id="weathericon"> <img id="weatherIcon1" src="images/sighs/01d.png" alt="Whether icon"/></p>
