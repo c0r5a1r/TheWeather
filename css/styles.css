@@ -51,7 +51,7 @@ div form input[type="text"] {
     background: #536A74;
     outline: 0;
     border:0;
-    font: 200 12px/25px 'Josefin Sans', sans-serif;
+    font: 200 16px/25px 'Josefin Sans', sans-serif;
     height: 30px;
     line-height:15px;
     margin:0;
@@ -64,7 +64,7 @@ div form button {
     border-bottom-right-radius:6px;
     background:#536A74;
     color:white;
-    font: 200 12px/25px 'Josefin Sans', sans-serif;
+    font: 200 18px 'Josefin Sans', sans-serif;
     border:0;
 }
 
